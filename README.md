@@ -26,25 +26,14 @@
 | category_id     | integer    | null: false                    |
 | state_id        | integer    | null: false                    |
 | price_id        | integer    | null: false                    |
+| postage_id      | integer    | null: false                    |
+| sender_id       | integer    | null: false                    |
+| shipping_date_id| integer    | null: false                    |
 | user            | references | null: false, foreign_key: true |
 ### Association
 
 - belongs_to :user
 
-## shippings テーブル
-
-| Column          | Type       | Options     |
-| --------------- | ---------- | ------------|
-| postage_id      | integer    | null: false |
-| sender_id       | integer    | null: false |
-| shipping_date_id| integer    | null: false |
-
-### Association
-
-- belongs_to :item
-- has_many :shipping_address
-
-### Association
 
 ### shipping_address テーブル
 
@@ -57,7 +46,3 @@
 | building_name  | string    |                |
 | phone_number   | string    | null: false    |
 
-### Association
-
-- belongs_to :item
-- belongs_to :shipping
