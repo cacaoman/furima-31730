@@ -19,26 +19,25 @@
 
 ## items テーブル
 
-| Column       | Type       | Options                        |
-| ------------ | ---------- | ------------------------------ |
-| name         | string     | null: false                    |
-| description  | string     | null: false                    |
-| category     | string     | null: false                    |
-| state        | string     | null: false                    |
-| price        | string     | null: false                    |
-| user         | references | null: false, foreign_key: true |
-
+| Column          | Type       | Options                        |
+| --------------- | ---------- | ------------------------------ |
+| name            | string     | null: false                    |
+| description     | string     | null: false                    |
+| category_id     | integer    | null: false                    |
+| state_id        | integer    | null: false                    |
+| price_id        | integer    | null: false                    |
+| user            | references | null: false, foreign_key: true |
 ### Association
 
 - belongs_to :user
 
 ## shippings テーブル
 
-| Column        | Type       | Options     |
-| ------------- | ---------- | ------------|
-| postage       | string     | null: false |
-| sender        | string     | null: false |
-| shipping_date | string     | null: false |
+| Column          | Type       | Options     |
+| --------------- | ---------- | ------------|
+| postage_id      | integer    | null: false |
+| sender_id       | integer    | null: false |
+| shipping_date_id| integer    | null: false |
 
 ### Association
 
