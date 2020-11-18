@@ -27,7 +27,6 @@
 | state_id           | integer    | null: false                    |
 | price_id           | integer    | null: false                    |
 | delivery_charge_id | integer    | null: false                    |
-| sender_id          | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 ### Association
 
