@@ -50,7 +50,7 @@
 
 | Column         | Type      | Options        |
 | ---------------|-----------| ---------------|
-| postal_cade_id | integer   | null: false    |
+| postal_cade    | string    | null: false    |
 | prefecture_id  | integer   | null: false    |
 | municipality   | string    | null: false    |
 | address        | string    | null: false    |
