@@ -23,10 +23,10 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
-| description        | string     | null: false                    |
+| description        | text       | null: false                    |
 | category_id        | integer    | null: false                    |
 | state_id           | integer    | null: false                    |
-| price_id           | integer    | null: false                    |
+| price              | integer    | null: false                    |
 | delivery_charge_id | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
