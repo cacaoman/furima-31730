@@ -29,6 +29,7 @@
 | price              | integer    | null: false                    |
 | delivery_charge_id | integer    | null: false                    |
 | time_to_ship_id    | integer    | null: false                    |
+| ship_from_id       | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association
